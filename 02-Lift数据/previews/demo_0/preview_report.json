@@ -1,0 +1,41 @@
+{
+  "demo": "demo_0",
+  "preview_resolution": [
+    128,
+    128
+  ],
+  "cameras": [
+    "agentview",
+    "robot0_eye_in_hand"
+  ],
+  "records": [
+    {
+      "label": "start",
+      "state_index": 0,
+      "joint_position_max_abs_error": 0.0,
+      "images": [
+        "start_agentview.png",
+        "start_robot0_eye_in_hand.png"
+      ]
+    },
+    {
+      "label": "middle",
+      "state_index": 29,
+      "joint_position_max_abs_error": 0.0,
+      "images": [
+        "middle_agentview.png",
+        "middle_robot0_eye_in_hand.png"
+      ]
+    },
+    {
+      "label": "last",
+      "state_index": 58,
+      "joint_position_max_abs_error": 0.0,
+      "images": [
+        "last_agentview.png",
+        "last_robot0_eye_in_hand.png"
+      ]
+    }
+  ],
+  "note": "Saved-state restoration preview only; action playback and policy success are not tested."
+}

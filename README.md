@@ -1,2 +1,25 @@
-# machine-learning-pj
-This repository implements a full pipeline of transformer-based robot imitation learning for two classic manipulation tasks: the canonical Lift task and the advanced Push-T task.
+# 机器学习课程项目：Lift 与 Push-T
+
+项目按五个工作阶段管理。当前已提交环境安装与验收材料，以及 Lift 数据集说明、划分清单、生成脚本和检查报告。原始/处理后的 HDF5 数据、模型权重和运行产物不放入 Git。
+
+## 目录
+
+| 目录 | 内容 | 当前状态 |
+|---|---|---|
+| `01-环境/` | MuJoCo、robosuite、ACT 基础环境安装和验收 | 原机验收通过；其他机器需本地复验 |
+| `02-Lift数据/` | 数据说明、划分、数据构建与预览脚本、报告 | 数据包已交接；HDF5 大文件单独保存 |
+| `03-ACT/` | Lift ACT 数据适配、训练配置、日志索引和模型说明 | 待训练负责人补充 |
+| `04-Lift评测/` | 闭环评测、固定初态、指标、结果与失败案例 | 待实现与实验 |
+| `05-推T/` | Push-T 数据、环境适配、训练与评测 | 选做/待可行性实验 |
+
+## 数据文件
+
+HDF5 文件较大，不由 Git 管理。请通过小组共享盘或课程数据源分发，并核对 `02-Lift数据/DATA_README.md` 和报告中的 SHA256。不要把测试集用于训练或归一化统计量拟合。
+
+## 贡献约定
+
+- 每个阶段在对应目录维护自己的说明和可复现命令。
+- 实验结果注明代码版本、数据划分、随机种子、环境配置和模型来源。
+- 不提交密码、访问令牌、个人路径、虚拟环境、checkpoint、原始日志或大型视频。
+- 合并前检查 `git status`，确认没有 HDF5、模型权重或个人信息。
+

@@ -1,0 +1,34 @@
+{
+  "source_sha256": "2067777cb8b532e9263dd09fd6448c41cc31224bb27be4a3b734010ae13eb540",
+  "dataset": "data/processed/lift_ph_image128_90demos.hdf5",
+  "splits": {
+    "train_20": {
+      "episodes": 20,
+      "steps": 961
+    },
+    "train_50": {
+      "episodes": 50,
+      "steps": 2384
+    },
+    "valid": {
+      "episodes": 20,
+      "steps": 1026
+    },
+    "test": {
+      "episodes": 20,
+      "steps": 927
+    }
+  },
+  "episodes": 90,
+  "steps": 4337,
+  "images": 8674,
+  "original_numeric_data_unchanged": true,
+  "passed": true,
+  "limitations": [
+    "Action playback not validated.",
+    "No images in next_obs.",
+    "Image orientation must match policy evaluation.",
+    "Image content was not manually inspected for every frame."
+  ],
+  "dataset_sha256": "0924de350abc138d9b49be221512aa3f8eba8278acb46eee3311cc8d22549270"
+}

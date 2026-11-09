@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "input": "synthetic data, upstream 14-dimensional state/action",
+  "pretrained_weights": false,
+  "gpu": "NVIDIA GeForce RTX 4070 Ti SUPER",
+  "loss": 1.0023564100265503,
+  "prediction_shape": [
+    2,
+    5,
+    14
+  ],
+  "finite_gradient_tensors": 81,
+  "optimizer_steps": 1,
+  "inference": "passed"
+}

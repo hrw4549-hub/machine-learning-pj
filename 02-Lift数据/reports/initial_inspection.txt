@@ -1,0 +1,110 @@
+===== 文件与示范数量 =====
+文件：data/raw/low_dim_v15.hdf5
+大小：20.11 MiB
+SHA256：2067777cb8b532e9263dd09fd6448c41cc31224bb27be4a3b734010ae13eb540
+示范数量：200
+
+===== 环境配置 =====
+{
+  "env_name": "Lift",
+  "env_version": "1.5.1",
+  "type": 1,
+  "env_kwargs": {
+    "has_renderer": false,
+    "has_offscreen_renderer": false,
+    "ignore_done": true,
+    "use_object_obs": true,
+    "use_camera_obs": false,
+    "control_freq": 20,
+    "controller_configs": {
+      "type": "BASIC",
+      "body_parts": {
+        "right": {
+          "type": "OSC_POSE",
+          "input_max": 1,
+          "input_min": -1,
+          "output_max": [
+            0.05,
+            0.05,
+            0.05,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "output_min": [
+            -0.05,
+            -0.05,
+            -0.05,
+            -0.5,
+            -0.5,
+            -0.5
+          ],
+          "kp": 150,
+          "damping": 1,
+          "impedance_mode": "fixed",
+          "kp_limits": [
+            0,
+            300
+          ],
+          "damping_limits": [
+            0,
+            10
+          ],
+          "position_limits": null,
+          "orientation_limits": null,
+          "uncouple_pos_ori": true,
+          "control_delta": true,
+          "interpolation": null,
+          "ramp_ratio": 0.2,
+          "input_ref_frame": "world",
+          "gripper": {
+            "type": "GRIP"
+          }
+        }
+      }
+    },
+    "robots": [
+      "Panda"
+    ],
+    "camera_depths": false,
+    "camera_heights": 84,
+    "camera_widths": 84,
+    "lite_physics": false,
+    "reward_shaping": false
+  }
+}
+
+===== 全部示范统计 =====
+总步数：9666
+最短示范：36 步
+最长示范：64 步
+平均长度：48.33 步
+动作维度：[7]
+动作各维最小值：[-1.0, -0.56, -1.0, -0.1507, -1.0, -0.518, -1.0]
+动作各维最大值：[1.0, 0.652, 1.0, 0.1186, 0.3051, 0.4782, 1.0]
+
+===== 第一条示范：demo_0 =====
+包含字段：['actions', 'dones', 'next_obs', 'obs', 'rewards', 'states']
+obs/object: shape=(59, 10), dtype=float64
+obs/robot0_eef_pos: shape=(59, 3), dtype=float64
+obs/robot0_eef_quat: shape=(59, 4), dtype=float64
+obs/robot0_eef_quat_site: shape=(59, 4), dtype=float32
+obs/robot0_gripper_qpos: shape=(59, 2), dtype=float64
+obs/robot0_gripper_qvel: shape=(59, 2), dtype=float64
+obs/robot0_joint_pos: shape=(59, 7), dtype=float64
+obs/robot0_joint_pos_cos: shape=(59, 7), dtype=float64
+obs/robot0_joint_pos_sin: shape=(59, 7), dtype=float64
+obs/robot0_joint_vel: shape=(59, 7), dtype=float64
+
+===== 已有数据划分 =====
+20_percent: 40 条
+20_percent_train: 36 条
+20_percent_valid: 4 条
+50_percent: 100 条
+50_percent_train: 90 条
+50_percent_valid: 10 条
+train: 180 条
+valid: 20 条
+
+初步检查通过：动作与观测长度一致，数值无 NaN/Inf。
+注意：尚未验证仿真回放、动作语义或图像。

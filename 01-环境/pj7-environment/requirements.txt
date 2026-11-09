@@ -1,0 +1,20 @@
+# Proposed baseline. A complete lock is saved after installation and validation.
+numpy==1.26.4
+numba==0.61.2
+scipy==1.15.3
+mujoco==3.2.7
+mink==0.0.5
+robosuite==1.5.1
+opencv-python==4.10.0.84
+h5py==3.12.1
+einops==0.8.1
+matplotlib==3.10.0
+Pillow==11.1.0
+PyYAML==6.0.2
+pyquaternion==0.9.9
+rospkg==1.6.0
+pexpect==4.9.0
+packaging==24.2
+ipython==8.37.0
+tqdm==4.67.1
+dm-control==1.0.27

@@ -1,0 +1,30 @@
+{
+  "python": "3.10.22 | packaged by conda-forge | (main, Oct  6 2026, 23:02:24) [GCC 14.4.0]",
+  "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "gl": "egl",
+  "passed": true,
+  "versions": {
+    "torch": "2.5.1+cu121",
+    "torchvision": "0.20.1+cu121",
+    "numpy": "1.26.4",
+    "mujoco": "3.2.7",
+    "robosuite": "1.5.1",
+    "h5py": "3.12.1",
+    "dm-control": "1.0.27"
+  },
+  "cuda_available": true,
+  "gpu": "NVIDIA GeForce RTX 4070 Ti SUPER",
+  "lift": [
+    {
+      "episode": 0,
+      "steps": 20,
+      "action_dim": 7
+    },
+    {
+      "episode": 1,
+      "steps": 20,
+      "action_dim": 7
+    }
+  ],
+  "act_import": "passed"
+}
